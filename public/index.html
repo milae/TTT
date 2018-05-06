@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/tictactoe.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- TODO TEIL3: Fügen Sie die Referenzen auf app.js und Board.js ein -->
+    <script src="js/Board.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+        $(document).ready(function () {
+        $("#player1, #player2").click(function () {
+            $("#player1, #player2").css({"text-decoration":"none"});
+            $(this).css({"text-decoration":"underline"})
+        });
+
+        $(document).ready(function () {
+            $("#c0").click(function () {
+                $("#c0").html("X")
+            })
+        })
+    });</script>
+</head>
+<body>
+<div id="username-section">
+    <label for="nickname">Name:</label>
+    <input id="nickname" type="text" autofocus>
+    <input id="start-button" type="button" class="button" value="Start">
+</div>
+<div id="game-section">
+    <div id="status-area">
+        <div id="player1" data-playerid="" data-sign="">Peter</div>
+        <div id="player2" data-playerid="" data-sign="">Paul</div>
+    </div>
+    <table>
+        <tr>
+            <td id="c0"></td>
+            <td id="c1"></td>
+            <td id="c2"></td>
+        </tr>
+        <tr>
+            <td id="c3"></td>
+            <td id="c4"></td>
+            <td id="c5"></td>
+        </tr>
+        <tr>
+            <td id="c6"></td>
+            <td id="c7"></td>
+            <td id="c8"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

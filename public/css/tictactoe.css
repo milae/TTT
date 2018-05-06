@@ -1,0 +1,42 @@
+
+body {
+    font-family: "Comic Sans MS";
+    font-size: 3vmin;
+}
+
+#username-section {
+    padding-top: 3vmin;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#player1, #player2 {
+    width: 20%;
+    padding-top: 3vmin;
+    text-align: center;
+}
+
+#player1 {
+    float: left;
+    margin-left: 20%;
+}
+
+#player2 {
+    margin-left: 60%;
+}
+
+table {
+    padding-top: 1vmin;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-spacing: 0.75vmin;
+}
+
+td {
+    width: 20%;
+    height: 20%;
+    padding-bottom: 33.33%;
+    border: solid black 0.5vmin;
+}
