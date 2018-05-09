@@ -28,9 +28,12 @@ var Board = (function () {
     Board.prototype.init = function () {
         //TODO TEIL 3: registrieren Sie einen Click-Eventhandler auf den einzelnen
         //Tabellenzellen und rufen Sie mark() auf
-        var boardThis = this;
-        $("td").on(function (event) {
-            boardThis.mark(event);
+        // Version von Walter, es gibt noch andere Möglichkeiten ...
+        var squares = document.getElementsByTagName("td");
+  		  for (var s = 0; s < squares.length; s++) {
+          $(squares[s]).on( "click", this.mark,false);
+        //$("td").on(function (event) {
+        //    boardThis.mark(event);
         });
     };
 
